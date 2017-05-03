@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7EE85F4B-A457-4BD8-8B6D-4343031C6E44}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>FileTemplate</RootNamespace>
+    <AssemblyName>FileTemplate</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="templates\component\index.ts" />
+    <TypeScriptCompile Include="templates\component\x.component.spec.ts" />
+    <TypeScriptCompile Include="templates\component\x.component.ts" />
+    <TypeScriptCompile Include="templates\e2e\x-form.component.e2e-spec.ts" />
+    <TypeScriptCompile Include="templates\e2e\x-home.component.e2e-spec.ts" />
+    <TypeScriptCompile Include="templates\e2e\x.component.e2e-spec.ts" />
+    <TypeScriptCompile Include="templates\form\index.ts" />
+    <TypeScriptCompile Include="templates\form\x.component.spec.ts" />
+    <TypeScriptCompile Include="templates\form\x.component.ts" />
+    <TypeScriptCompile Include="templates\home\index.ts" />
+    <TypeScriptCompile Include="templates\home\x.component.spec.ts" />
+    <TypeScriptCompile Include="templates\home\x.component.ts" />
+    <TypeScriptCompile Include="templates\home\x.routes.ts" />
+    <TypeScriptCompile Include="templates\root\index.ts" />
+    <TypeScriptCompile Include="templates\root\x.component.spec.ts" />
+    <TypeScriptCompile Include="templates\root\x.component.ts" />
+    <TypeScriptCompile Include="templates\root\x.routes.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="templates\component\x.component.html" />
+    <Content Include="templates\form\x.component.html" />
+    <Content Include="templates\home\x.component.html" />
+    <Content Include="templates\root\x.component.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
