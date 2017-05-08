@@ -50,29 +50,71 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="templates\component\index.ts" />
-    <TypeScriptCompile Include="templates\component\x.component.spec.ts" />
-    <TypeScriptCompile Include="templates\component\x.component.ts" />
-    <TypeScriptCompile Include="templates\e2e\x-form.component.e2e-spec.ts" />
-    <TypeScriptCompile Include="templates\e2e\x-home.component.e2e-spec.ts" />
-    <TypeScriptCompile Include="templates\e2e\x.component.e2e-spec.ts" />
-    <TypeScriptCompile Include="templates\form\index.ts" />
-    <TypeScriptCompile Include="templates\form\x.component.spec.ts" />
-    <TypeScriptCompile Include="templates\form\x.component.ts" />
-    <TypeScriptCompile Include="templates\home\index.ts" />
-    <TypeScriptCompile Include="templates\home\x.component.spec.ts" />
-    <TypeScriptCompile Include="templates\home\x.component.ts" />
-    <TypeScriptCompile Include="templates\home\x.routes.ts" />
-    <TypeScriptCompile Include="templates\root\index.ts" />
-    <TypeScriptCompile Include="templates\root\x.component.spec.ts" />
-    <TypeScriptCompile Include="templates\root\x.component.ts" />
-    <TypeScriptCompile Include="templates\root\x.routes.ts" />
+    <Content Include="templates\component\index.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="templates\component\x.component.spec.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="templates\component\x.component.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="templates\e2e\x-form.component.e2e-spec.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="templates\e2e\x-home.component.e2e-spec.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="templates\e2e\x.component.e2e-spec.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="templates\form\index.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="templates\form\x.component.spec.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="templates\form\x.component.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="templates\home\index.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="templates\home\x.component.spec.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="templates\home\x.component.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="templates\home\x.routes.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="templates\root\index.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="templates\root\x.component.spec.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="templates\root\x.component.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="templates\root\x.routes.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="templates\component\x.component.html" />
-    <Content Include="templates\form\x.component.html" />
-    <Content Include="templates\home\x.component.html" />
-    <Content Include="templates\root\x.component.html" />
+    <Content Include="templates\component\x.component.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="templates\form\x.component.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="templates\home\x.component.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="templates\root\x.component.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
